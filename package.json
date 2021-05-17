@@ -7,12 +7,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/gsv-ui-vite.umd.js",
-  "module": "./dist/gsv-ui-vite.es.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/gsv-ui-vite.es.js",
-      "require": "./dist/gsv-ui-vite.umd.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "version": "0.0.1",

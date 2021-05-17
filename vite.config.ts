@@ -10,6 +10,7 @@ export default defineConfig({
     target: ['chrome80'],
     lib: {
       name: 'gsv-ui',
+      fileName: 'index',
       entry: path.resolve(__dirname, 'src/main.ts'),
     },
     rollupOptions: {
