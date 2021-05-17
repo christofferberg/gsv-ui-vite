@@ -24,7 +24,7 @@
     "dev": "npm run vite:dev",
     "clean": "rimraf dist",
     "compile": "tsc --project tsconfig.build.json",
-    "build": "run-s clean compile vite:build",
+    "build": "run-s clean vite:build compile",
     "serve": "npm run vite:serve",
     "release": "np"
   },
