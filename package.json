@@ -1,5 +1,6 @@
 {
-  "name": "gsv-ui-vite",
+  "name": "@adapt-agency/gsv-ui-vite",
+  "author": "Adapt Agency",
   "publishConfig": {
     "access": "public"
   },
