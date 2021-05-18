@@ -8,7 +8,7 @@ const moduleNameMapper = {
 const config: Config.InitialOptions = {
   verbose: true,
   roots: ['<rootDir>/src'],
-  setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/src/test/setupTests.ts'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',

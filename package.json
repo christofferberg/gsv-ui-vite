@@ -26,7 +26,7 @@
     "tsup": "tsup main.ts --format esm,cjs --dts --minify",
     "build": "run-s clean tsup",
     "serve": "npm run vite:serve",
-    "test": "jest --passWithNoTests",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "release": "np",
     "version": "npm run build",
     "storybook": "start-storybook -p 6006",
