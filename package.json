@@ -26,7 +26,8 @@
     "tsup": "tsup src/main.ts --format esm,cjs --dts --minify",
     "build": "run-s clean tsup",
     "serve": "npm run vite:serve",
-    "release": "np"
+    "release": "np",
+    "version": "npm run build"
   },
   "peerDependencies": {
     "react": "^17.0.0",
