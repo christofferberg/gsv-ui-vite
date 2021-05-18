@@ -4,7 +4,8 @@ import { Button } from '@components/Button'
 function App() {
   return (
     <>
-      <Button>Hello world</Button>
+      <Button variant="primary">Hello world</Button>
+      <Button variant="secondary">Hello world</Button>
     </>
   )
 }
