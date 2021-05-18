@@ -8,12 +8,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
     }
   },
   "version": "0.0.6",
@@ -23,14 +23,16 @@
     "vite:serve": "vite preview",
     "dev": "npm run vite:dev",
     "clean": "rimraf dist",
-    "build": "run-s clean vite:build",
+    "tsup": "tsup src/main.ts --format esm,cjs --dts --minify",
+    "build": "run-s clean tsup",
     "serve": "npm run vite:serve",
     "release": "np"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
+  "dependencies": {},
   "devDependencies": {
     "@stitches/react": "^0.1.9",
     "@types/node": "^15.3.0",
