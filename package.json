@@ -16,7 +16,7 @@
       "require": "./dist/main.cjs"
     }
   },
-  "version": "0.0.13",
+  "version": "0.0.14",
   "scripts": {
     "vite:dev": "vite",
     "vite:build": "vite build",
