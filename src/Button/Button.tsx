@@ -2,6 +2,7 @@ import React, { HTMLAttributes } from 'react'
 import { styled } from '../stitches.config'
 
 const StyledButton = styled('button', {
+  transition: 'all 150ms ease',
   display: 'inline-flex',
   border: 'none',
   borderRadius: 4,
@@ -19,7 +20,7 @@ const StyledButton = styled('button', {
       secondary: {
         backgroundColor: '$purple500',
         '&:hover': {
-          backgroundColor: '$purple700',
+          backgroundColor: '$purple800',
         },
       },
     },
