@@ -51,10 +51,15 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   size: 'small' | 'medium' | 'large'
 }
 
-const Button = ({ variant = 'primary', children, ...props }: ButtonProps) => {
+const Button = ({
+  variant = 'primary',
+  size = 'medium',
+  children,
+  ...props
+}: ButtonProps) => {
   return (
     <>
-      <StyledButton variant={variant} {...props}>
+      <StyledButton variant={variant} size={size} {...props}>
         {children}
       </StyledButton>
     </>
