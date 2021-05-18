@@ -1,13 +1,8 @@
 import type { Config } from '@jest/types'
-import { compilerOptions } from './tsconfig.json'
-import { pathsToModuleNameMapper } from 'ts-jest/utils'
 
 const moduleNameMapper = {
   '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
   '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
-  ...pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: '<rootDir>/src',
-  }),
 }
 
 const config: Config.InitialOptions = {
