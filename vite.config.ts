@@ -1,11 +1,17 @@
 import path from 'path'
 import reactRefresh from '@vitejs/plugin-react-refresh'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import typescript2 from 'rollup-plugin-typescript2'
 import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh(), tsconfigPaths()],
+  plugins: [
+    reactRefresh(),
+    {
+      ...typescript2(),
+      apply: 'build',
+    },
+  ],
   build: {
     target: ['chrome80'],
     lib: {

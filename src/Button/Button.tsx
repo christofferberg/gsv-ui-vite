@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, ReactNode } from 'react'
-import { styled } from 'stitches.config'
+import { styled } from '../stitches.config'
 
 const StyledButton = styled('button', {
   border: 'none',
@@ -24,17 +24,16 @@ const StyledButton = styled('button', {
   },
 })
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps {
   variant?: 'primary' | 'secondary'
-  children: ReactNode
 }
 
-const Button = ({ variant = 'primary', children, ...props }: ButtonProps) => {
+const Button = ({ variant = 'primary', ...props }: ButtonProps) => {
   return (
     <>
-      <StyledButton variant={variant} {...props}>
-        {children}
-      </StyledButton>
+      <button {...props}>
+        <span>{variant}</span>
+      </button>
     </>
   )
 }
