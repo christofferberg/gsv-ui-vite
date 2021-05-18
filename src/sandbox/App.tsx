@@ -1,11 +1,11 @@
 import React from 'react'
-import { Button } from '@components/Button'
+import { Button } from 'Button'
 
 function App() {
   return (
     <>
-      <Button variant="primary">Hello world</Button>
-      <Button variant="secondary">Hello world</Button>
+      <Button variant="primary" />
+      <Button variant="secondary" />
     </>
   )
 }

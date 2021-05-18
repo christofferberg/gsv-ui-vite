@@ -9,8 +9,9 @@
     "jsx": "react",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
+    "declaration": true,
     "moduleResolution": "Node",
-    "noEmit": true,
+    "noEmit": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,5 +23,6 @@
       "@lib/*": ["lib/*"]
     }
   },
-  "include": ["src", "src/components"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
