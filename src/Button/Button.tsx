@@ -52,7 +52,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   size: 'small' | 'medium' | 'large'
 }
 
-const Button = ({
+export const Button = ({
   variant = 'primary',
   size = 'medium',
   children,
